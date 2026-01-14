@@ -1,5 +1,5 @@
 /* 
-This is default and very simple styles file for Yasb. 
+This is a custom style for a yasb bar, very similar to the default one. 
 For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
 */
 :root {
@@ -816,13 +816,17 @@ For more information about configuration options, please visit the Wiki https://
   background: transparent;
 }
 
-/* Container — paint only */
 .apps-widget .widget-container {
-  background-color: #313244;          /* surface0 */
-  border-radius: 12px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  background-color: rgba(76, 79, 105, 0.52); /* surface0, translucent */
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
   padding: 2px 6px;
 }
+
 
 /* Labels / icons — absolutely no sizing */
 .apps-widget .widget-container .label {
@@ -839,6 +843,7 @@ For more information about configuration options, please visit the Wiki https://
   background: rgba(203, 166, 247, 0.22);
   color: #f38ba8;                     /* red */
   box-shadow: 0 0 6px rgba(243, 139, 168, 0.45);
+  border-radius: 10px;
 }
 
 /* Active state — visual feedback only */
