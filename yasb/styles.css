@@ -1,5 +1,6 @@
+
 /* 
-This is a custom style for a yasb bar, very similar to the default one. 
+This is default and very simple styles file for Yasb. 
 For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
 */
 :root {
@@ -1246,3 +1247,4 @@ For more information about configuration options, please visit the Wiki https://
     background-color: rgba(76, 79, 105, 0.52);
     backdrop-filter: blur(12px) saturate(120%);
 }
+

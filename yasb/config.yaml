@@ -42,7 +42,7 @@ bars:
       - "battery"
       - "glazewm_workspaces"
       - "glazewm_tiling_direction"
-      - "active_window"
+      #- "active_window"
       - "pomodoro"
       - "todo"
       center:
@@ -52,6 +52,7 @@ bars:
       - "media"
       - "apps"
       - "weather"
+      - "wallpapers"
       #- "microphone"
       - "volume"
       #- "notifications"
@@ -532,3 +533,21 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
+
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\udb83\ude09</span>"
+      # Example path to folder with images. Can be a single string or a list of strings.
+      image_path: "C:\\Users\\user\\.config\\wallpapers" 
+      gallery:
+          enabled: true
+          blur: true
+          image_width: 220
+          image_per_page: 6
+          orientation: "portrait"
+          show_buttons: false
+          image_spacing: 8
+          lazy_load: true
+          lazy_load_fadein: 400
+          image_corner_radius: 12
